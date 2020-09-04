@@ -1,4 +1,4 @@
-var sock = io("/");
+var sock = io("/glue");
 
 var shared = {
     def: {},
@@ -18,7 +18,6 @@ sock.on("up-relay", (delta) => {
         }
     }
     catch (e) {
-
     }
 });
 
